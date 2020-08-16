@@ -22,34 +22,31 @@ const Logo = () => (
 				50% {
 					opacity: 0.3;
 				}
-
-				100% {
+				to {
 					opacity: 1;
 				}
-			}
-
-			#Right_Glasses,
-			#Left_Glasses {
-				animation: fade 6000ms ease infinite;
-			}
-
-			#Right_Glasses {
-				fill: var(--pink);
-				opacity: 1;
-			}
-
-			#Left_Glasses {
-				fill: var(--green);
-				opacity: 1;
 			}
 
 			#Teeth_Upper_1_ {
 				animation: laugh-upper 2000ms infinite;
 				animation-direction: alternate;
 			}
+
 			#Teeth_Lower {
 				animation: laugh-lower 2000ms infinite;
 				animation-direction: alternate;
+			}
+
+			#Right_Glasses{
+				animation: fade 3000ms ease infinite;
+				animation-fill-mode: forwards;
+				fill: rgb(155 222 172);
+			}
+
+			#Left_Glasses {
+				animation: fade 3000ms ease infinite;
+				animation-fill-mode: forwards;
+				fill: rgb(229 25 100);
 			}
 		`}</style>
 	</>

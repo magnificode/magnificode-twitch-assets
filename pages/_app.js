@@ -11,12 +11,19 @@ const StreamAssetApp = ({ Component, pageProps }) => (
 				--purple-dark: #1a1115;
 				--dark-gray: #1a1a1a;
 				--green: #9BDEAC;
+				--mineshaft: #323232;
+				--codgray: #1C1C1C;
 			}
 
 			html,
 			body {
+				font-family: "Press Start 2P", monospace;
 				margin: 0;
 				padding: 0;
+			}
+
+			* {
+				box-sizing: border-box;
 			}
 		`}</style>
 	</>
